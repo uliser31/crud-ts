@@ -1,0 +1,53 @@
+npm i typescript -D
+npx tsc --init           para iniciar proyecto typescript
+
+ts-config
+    "target":"es2019",
+    "moduleResolution":"node"
+
+src
+    index.ts
+    app.ts
+
+npm i express 
+npm i @types/express
+
+Instalar modulo react snipets ES& React/Reduce/GrapthSQL para atajos
+
+package.json
+"scripts:{
+    "build": "tsc"
+}
+
+tsconfig.json
+"outdir":./dist/"
+"rootdir": "/.src/"
+
+nmp run build    para generar el proyecto final
+
+node dist/index.js   para ejecutar el projecto general
+
+package.json
+
+"start": "npm run build && node dist/index.js"   para produccion
+
+npm i nodemon -d  para compilar cambios automaticamente
+
+"dev": "nodemon src/index.ts"
+
+npm i ts-node
+
+nodemon.json
+{
+    "watch": ["src"],
+    "ext": "ts",
+    "ignore": [
+        "src/**/*.spec.ts"
+    ]
+    "exec": "ts-node"
+}
+
+npm i morgan       para ver ls peticiones que van llegando
+npm i @types/morgan
+
+

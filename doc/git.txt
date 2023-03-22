@@ -1,0 +1,75 @@
+https://www.youtube.com/watch?v=kEPF-MWGq1w
+
+
+git  init → crea repositorio en el directorio en que estoy
+git --version
+
+git config --global user.name “Uliser Barrero Rodriguez”
+git config --global user.email “uliser.barrero@desoft.cu”
+git config --global user.password “Token”
+
+git config --list → mi configuracion, nombre e email
+
+.gitignore   crear fichero
+
+ESTADOS
+working directorio
+stagin  
+repositorio
+
+git status
+
+
+git add odoo-custom-addons
+
+git commit -m “Agregando mis primeros archivos”
+
+
+git log  → Historial de los commit 
+
+
+NOTA: Iniciar git en el directorio donde tengo mi app ejemplo 
+             en odoo-custom-addons
+             git init
+             git add .  O git add -A
+             Git commit -m “agregando mis primeros archivos”
+
+git brach -a  → lista ramas locales
+
+git rm  - -cached  .gitignore → para borrar un archivo del stage area, es decir despues de haberlo 				agregado con un git add
+
+git clone https://github.com/uliser31/PagoaProd.git
+
+
+git push -u origin master  → para subir el codigo a githup
+
+git pull origin master  → para descargar r el codigo a githup, actualizarlo si algun otro desarrollador esta trabajando en el.
+
+git branch minuevafeature → crea una nueva rama
+git checkout → para cambiarme a la nueva feature
+
+git branch → muestra todas las ramas
+git branch -a muestra todas las ramas locales o remotas
+
+git merge minuevafeature para pasas de minuevafeature a master los cambios, tengo que estar parado en master.
+
+git push origin –delete minuevafeature → para borrar una feature en remoto.
+
+
+Git branch -d minuevafeatura → para borrar una rama local, pero no es necesario.
+
+
+
+Git push -u origin master https://github.com/uliser31/PagoaProd.git
+
+
+git config --global --unset http.proxy
+
+
+git remote add origin https://github.com/uliser31/PagoaProd.git
+git remote -v    listar config anterior
+git remote remove origin
+
+git branch -M main
+git push -u origin mainhttps://github.com/settings/tokens
+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
