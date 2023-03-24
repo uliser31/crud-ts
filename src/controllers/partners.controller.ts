@@ -8,8 +8,8 @@ const partenrs: IPartners =[] ;
 
 
 export function partnersCtrl(req:Request,res:Response):Response{
-    //db.getPartners();
-    //return res.send(db.getPartners)
+    db.getPartners();
+   // return res.send(db.getPartners)
     return res.json(db.partners)
 }
 

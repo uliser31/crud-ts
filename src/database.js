@@ -12,7 +12,7 @@ const odoo = new Odoo({
 
 const db = {
     partners : [],
-    getPartners : function(){
+    getPartners(){
         const odoo = new Odoo({
             url: 'localhost',
             port: 8069,
@@ -44,10 +44,10 @@ odoo.connect(function (err) {
         odoo.execute_kw('res.partner', 'read', params, function (err2, value2) {
             if (err2) { return console.log(err2); }
             console.log('Result: ', value2);
-            db.partners = value2;
+            db.partners = value2; 
         });
     });   
-});    
+});     
 
 /*
 odoo.getPartners = () => {
